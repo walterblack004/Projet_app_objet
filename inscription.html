@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowComm - Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="accueil.html"><h1>ShadowComm</h1></a>
+            <p>Rejoignez l'agence de communication sécurisée.</p>
+        </header>
+        <main>
+            <form action="register.php" method="POST" class="auth-form">
+                <h2>Inscription</h2>
+                <input type="text" name="username" placeholder="Nom de code" required>
+                <input type="password" name="password" placeholder="Mot de passe" required>
+                <label>
+                    <input type="checkbox" name="confidentiality" required>
+                    J'accepte les <a href="rgpd.html" target="_blank">règles de confidentialité</a>.
+                </label>
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p class="login-link">Déjà membre ? <a href="connexion.html">Connectez-vous</a></p>
+        </main>
+    </div>
+</body>
+</html>

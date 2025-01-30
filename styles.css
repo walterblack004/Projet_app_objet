@@ -1,0 +1,212 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{ 
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff4444;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.auth-form {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ff4444;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #cc0000;
+}
+
+.signup-link, .login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a, .login-link a {
+    color: #ff4444;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Chat Page */
+.chat-container {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #333;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message .sender {
+    font-weight: bold;
+    color: #ff4444;
+}
+
+.message .timestamp {
+    font-size: 0.8rem;
+    color: #cccccc;
+    margin-left: 10px;
+}
+
+#chat-form {
+    display: flex;
+}
+
+#chat-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chat-form button:hover {
+    background-color: #cc0000;
+}
+
+#logout {
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: #666;
+}
+
+/* Style pour le conteneur du label */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Style pour la case à cocher personnalisée */
+input[type="checkbox"] {
+    appearance: none; /* Désapparence par défaut */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ff4444;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+/* Style lorsque la case est cochée */
+input[type="checkbox"]:checked {
+    background-color: #ff4444;
+}
+
+/* Ajouter une coche personnalisée */
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Style pour le lien dans le label */
+label a {
+    color: #ff4444;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
