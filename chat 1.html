@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowComm - Chat</title>
+    <title>ShadowComm - Messagerie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <!-- En-tête -->
         <header>
-            <a href="accueil.html"><h1>ShadowComm</h1></a>
-            <p>Chat sécurisé</p>
+            <h1>ShadowComm - Messagerie</h1>
             <button id="logout">Déconnexion</button>
         </header>
+
+        <!-- Zone de Chat -->
         <main class="chat-container">
             <div id="chat-messages">
                 <!-- Messages affichés ici -->
-                <div class="message">
-                    <span class="sender">Agent007</span>
-                    <span class="content">Rendez-vous à minuit.</span>
-                    <span class="timestamp">22:30</span>
-                </div>
             </div>
             <form id="chat-form">
                 <input type="text" id="message-input" placeholder="Écrivez un message..." required>
@@ -28,6 +25,8 @@
             </form>
         </main>
     </div>
+
+    <!-- JavaScript pour le Chat -->
     <script src="chat.js"></script>
 </body>
 </html>
